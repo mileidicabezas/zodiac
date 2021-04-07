@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'zodiacsing/horoscopo.css' %}" rel="stylesheet">
+    <link href="{% static 'zodiacsing/zodiac.js' %}" rel="stylesheet">
+</head>
+
+<body style="font-family:Verdana;">
+    <nav class="layaut-inicio">
+        <div class="inicio" style="background-color:rgb(15, 32, 131);padding:15px;">
+            <h1 style="color: white;"> Zodiac & Personality</h1>
+        </div>
+    </nav>
+
+    <nav class="layaut">
+        <div style="overflow:auto">
+            <div class="menu">
+                <div class="menuitem"><a class="active" href="zodiac">Home</a></div>
+                <div class="menuitem"> <a href="horoscopo">Zodiac sign</a></div>
+                <p style="color: rgb(15, 32, 131);">Understand your personality according to your sign of zodiac.</p>
+                <form>
+                    <label for="start"> <br>Brithdate:</label><br>
+                    <select id="month">
+                        <option> January </option>
+                        <option> Febraury </option>
+                        <option> March </option>
+                        <option> April </option>
+                        <option> May </option>
+                        <option> June </option>                <option> July </option>
+                        <option> August </option>
+                        <option> September </option>
+                        <option> October </option>
+                        <option> November </option>
+                        <option> December </option>
+                    </select>
+                    <label for="start"></label>
+                    <select id="day">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                        <option> 4 </option>
+                        <option> 5 </option>
+                        <option> 6 </option>
+                        <option> 7 </option>
+                        <option> 8 </option>
+                        <option> 9 </option>
+                        <option> 10 </option>
+                        <option> 11 </option>
+                        <option> 12 </option>
+                        <option> 13 </option>
+                        <option> 14 </option>
+                        <option> 15 </option>
+                        <option> 16 </option>
+                        <option> 17 </option>
+                        <option> 18 </option>
+                        <option> 19 </option>
+                        <option> 20 </option>
+                        <option> 21 </option>
+                        <option> 22 </option>
+                        <option> 23 </option>
+                        <option> 24 </option>
+                        <option> 25 </option>
+                        <option> 26 </option>
+                        <option> 27 </option>
+                        <option> 28 </option>
+                        <option> 29 </option>
+                        <option> 30 </option>
+                        <option> 31 </option>
+                    </select>
+                </form>
+                <br>
+                <button> Start</button>
+            </div>
+            {% block body %}
+
+            {% endblock %}
+        </div>
+    </nav>
+
+    <div class="ami"
+        style="overflow:auto; background-color: rgb(15, 32, 131); border-radius: 15px 50px 30px 5px;padding: 8px; margin-left: 50px; margin-right: 50px;">
+        <h3 style="text-align: center; color: white;">ZoDiaC SiGNS</h3>
+        <ul class= "ul-icon">
+            <a href="https://www.linkedin.com/in/mileidi-cabezas-923619193/" class="fa fa-linkedin"></a><br>
+            <a href="https://github.com/mileidicabezas" class="fa fa-github"></a> <br>
+            <a href="https://twitter.com/Mileid13" class="fa fa-twitter"></a>
+        </ul>
+    </div>
+
+<footer class="page-footer black lighten-1">
+    <div class="footer-copyright">
+        <div class="container" style="text-align:center; font-size: 12px;"> Mileidi Cabezas © 2020</div>
+    </div>
+</footer>
+
+</body>
+
+</html>
