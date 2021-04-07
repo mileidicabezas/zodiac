@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+  }
+  .layaut-inicio {
+    margin-right: 50px;
+    margin-left: 50px;
+
+  }
+  .layaut {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 8px;
+    margin-top: 7px;
+    border-top: 5px solid cadetblue;
+  
+}
+
+.ul-icon {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  padding-left: 2px;
+}
+
+.ul-icon a {
+text-decoration: none;
+padding: 35px;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+  margin-top: 4px;
+  margin-right: 18px;
+  margin-left: 18px;
+  border-top: 2px solid white;
+}
+.fa-github {
+  color: black;
+  margin-top: 4px;
+  margin-right: 18px;
+  margin-left: 18px;
+  border-top: 2px solid black;
+}
+.fa-twitter {
+  color:#007bb5;
+  margin-top: 4px;
+  margin-right: 18px;
+  margin-left: 18px;
+  border-top: 2px solid white;
+}
+
+
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .menuitem{
+    padding: 8px;
+    margin-top: 7px;
+    border-top: 1px solid cadetblue;
+    border-bottom: 1px solid cadetblue;
+    border-right: 1px solid cadetblue;
+    border-left: 1px solid cadetblue;
+    overflow: hidden;
+    list-style-type: none;
+    text-decoration: none;
+
+  }
+  .main {
+    float: left;
+    width: 70%;
+    padding: 0 20px;
+    overflow: hidden;
+    
+  }
+
+  .main p {
+      text-align: justify;
+    
+  }
+  .right {
+    margin-top: 20px;
+    float: left;
+    width: 10%;
+  }
+
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+.main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+.menu, .main, .right {
+      width: 100%;
+    }
+  }
